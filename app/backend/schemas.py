@@ -73,6 +73,13 @@ class TaskResponse(BaseModel):
     class Config:
         from_attributes = True
 
+# Task update schemas
+class TaskStatusUpdate(BaseModel):
+    status: TaskStatus
+
+class TaskPriorityUpdate(BaseModel):
+    priority: Priority
+
 # Comment schemas
 class CommentCreate(BaseModel):
     content: str
@@ -87,4 +94,14 @@ class CommentResponse(BaseModel):
     
     class Config:
         from_attributes = True
+
+# Analytics schemas
+class AnalyticsResponse(BaseModel):
+    total_tasks: int
+    tasks_by_status: dict
+    tasks_by_priority: dict
+    tasks_by_project: dict
+    overdue_tasks: int
+    completed_today: int
+    completed_this_week: int
 

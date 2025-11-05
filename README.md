@@ -1,5 +1,8 @@
 # Task Management System (Jira/Trello-like)
 
+## 🚀 Live Demo
+**Try it out:** [https://task-manager-fe.up.railway.app/](https://task-manager-fe.up.railway.app/)
+
 ## Overview
 A full-featured task management system similar to Jira/Trello with project management, task tracking, comments, attachments, and real-time updates.
 
